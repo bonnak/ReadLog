@@ -68,12 +68,12 @@ public class App {
      */
     public static void showMenu() {
         System.out.println();
-        System.out.println("Please enter the following number 1-6");
+        System.out.println("Please enter the following number 1-8");
         System.out.println("1: Import the log file (make sure the file located in the same folder with the program");
         System.out.println("2: List of machine that have reported the events");
         System.out.println("3: Export the list of Machine");
-        System.out.println("4: Report of all events signifying 'failed' ");
-        System.out.println("5: Export the reports of all events signifying 'failed' ");
+        System.out.println("4: Report of all events signifying 'failed'");
+        System.out.println("5: Export the reports of all events signifying 'failed'");
         System.out.println("6: List the log contents");
         System.out.println("7: Exit from the system");
         System.out.println("8: Show menu");
