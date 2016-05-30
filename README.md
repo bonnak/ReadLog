@@ -1,5 +1,5 @@
 # Please enter the following number 1-8
-1: Import the log file (make sure the file located in the same folder with the program"\n
+1: Import the log file (make sure the file located in the same folder with the program"<br>
 2: List of machine that have reported the events
 3: Export the list of Machine
 4: Report of all events signifying 'failed'
