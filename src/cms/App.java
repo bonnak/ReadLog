@@ -44,7 +44,6 @@ public class App {
                     break;
 
                 case 4:
-                    System.out.print("Please type the machine name: ");
                     log.listFailedEvent();
                     break;
 
