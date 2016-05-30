@@ -143,7 +143,7 @@ public class LogHashTable {
     /**
      * Remove old data and set members to its default state.
      */
-    private void resetMembers(){
+    public void resetMembers(){
         this.time_map.clear();
         this.machine_map.clear();
         this.event_map.clear();

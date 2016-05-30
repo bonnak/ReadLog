@@ -20,12 +20,14 @@ public class Log {
 
     public Log() {
         this.hash_table = new LogHashTable();
-        this.report_dir = "Report";
+        this.report_dir = ".";
     }
 
     public void readFile(String file_name) throws IOException {
 
         Scanner file = new Scanner(new File(file_name));
+        
+        this.hash_table.resetMembers();
         file.nextLine(); // Omit the first line.
 
         while (file.hasNextLine()) {
