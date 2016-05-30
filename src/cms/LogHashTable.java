@@ -50,7 +50,7 @@ public class LogHashTable {
     /**
      * Get all data.
      * 
-     * @return 
+     * @return List<String>
      */
     public List<String> all(){
         List<String> list = new ArrayList<String>();

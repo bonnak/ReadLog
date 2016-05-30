@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 public class App {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Scanner scanChoice = new Scanner(System.in);
         int choice;
@@ -25,7 +25,12 @@ public class App {
             switch (choice) {
                 case 1:
                     System.out.print("Please type the log file name : ");
-                    log.readFile(new Scanner(System.in).nextLine());
+                    try {
+                        log.readFile(new Scanner(System.in).nextLine());
+                    } catch (IOException ex) {
+                        Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+
                     break;
 
                 case 2:
@@ -46,7 +51,7 @@ public class App {
                 case 5:
                     log.exportFailedEventReport();
                     break;
-                    
+
                 case 6:
                     log.ShowAllLog();
                     break;
